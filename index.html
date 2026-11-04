@@ -23,7 +23,7 @@
 const ITEMS=[[&#x27;exam&#x27;,&#x27;會考&#x27;,15],[&#x27;high&#x27;,&#x27;高中優免&#x27;,50],[&#x27;joint&#x27;,&#x27;基北免試&#x27;,100],[&#x27;fivePriority&#x27;,&#x27;五專優免&#x27;,60],[&#x27;fiveGeneral&#x27;,&#x27;五專免試&#x27;,60]];
 const CLASSES=[&#x27;901&#x27;,&#x27;902&#x27;,&#x27;903&#x27;,&#x27;904&#x27;,&#x27;905&#x27;,&#x27;906&#x27;]; const KEY=&#x27;grade9_booklets_2026_v1&#x27;;
 const $=id=&gt;document.getElementById(id);let data={};
-function seats(cls){return [...Array(cls===&#x27;906&#x27;?16:17)].map((_,i)=&gt;i+1).concat([...Array(cls===&#x27;906&#x27;?24:18)].map((_,i)=&gt;i+21));}
+function seats(cls){return [...Array(cls===&#x27;906&#x27;?16:17)].map((_,i)=&gt;i+1).concat([...Array(cls===&#x27;906&#x27;?25:18)].map((_,i)=&gt;i+21));}
 function key(c,s){return c+&#x27;-&#x27;+s;}function sum(a){return ITEMS.reduce((n,[id,,price])=&gt;n+(a[id]?price:0),0)}
 function sorted(){return Object.values(data).sort((a,b)=&gt;Number(a.class)-Number(b.class)||a.seat-b.seat)}
 function dollars(n){return &#x27;NT$ &#x27;+n.toLocaleString(&#x27;zh-TW&#x27;)}
